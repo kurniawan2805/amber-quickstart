@@ -1,0 +1,9 @@
+{{!-- {{outlet}} --}}
+<h2>{{this.title}}</h2>
+
+<ul>
+  {{#each this.people as |person|}}
+  {{!-- add click event --}}
+  <li {{action "showPerson" person}}>{{person}}</li>
+  {{/each}}
+</ul>
